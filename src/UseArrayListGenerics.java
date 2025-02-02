@@ -13,7 +13,7 @@ public class UseArrayListGenerics
     public static void main(String[] args) {
         DecimalFormat df = new DecimalFormat("0.00");
 
-        List<Item> shoppingList = new ArrayList<Item>();
+        List<Item> shoppingList = new ArrayList<>();
 
         // add the items
         Item milk = new Item("Milk", 2, 3.79);
@@ -33,6 +33,7 @@ public class UseArrayListGenerics
              * ArrayList allows the use of an index to retrieve an item
              */
 
+            // no need to typecast what get() returns
             contents = shoppingList.get(i); 
 
             // accumulate total cost
